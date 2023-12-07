@@ -1,0 +1,3 @@
+pip list --format=freeze > requirements.txt
+pyrcc5 crane.qrc -o crane_rc.py
+Pyinstaller -F -w -i Black★RockShooter.ico launcher.py
