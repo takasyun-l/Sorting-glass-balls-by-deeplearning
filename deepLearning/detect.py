@@ -70,8 +70,8 @@ class YOLOv5Detector:
             rbtZeroPoints = (0,0)
             rbtXArg = 0.318
             rbtYArg = 0.323
-            rbtInf[1] = rbtInf[1]*rbtXArg-725.27825
-            rbtInf[2] = rbtInf[2]*rbtYArg-208.386
+            rbtInf[1] = rbtInf[1]*rbtXArg-725.27825+1.349
+            rbtInf[2] = rbtInf[2]*rbtYArg-208.386+2.121
             infomations.append(rbtInf)
             cv2.rectangle(img, (x1, y1), (x2, y2), (0, 0, 255), 1, 8)
             cv2.circle(img, center, 2, (0, 255, 0), -1)

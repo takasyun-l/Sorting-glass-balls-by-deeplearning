@@ -5,7 +5,7 @@ from Ui_server import Ui_MainWindow
 import threading
 import server
 from deepLearning.Detecter import Detecter
-
+import cv2
 
 class MyMainWindow(QMainWindow, Ui_MainWindow):
     recvmsg = pyqtSignal(object)
